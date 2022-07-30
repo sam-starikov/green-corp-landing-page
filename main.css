@@ -346,6 +346,5 @@ button:hover {
 }
 
 .animate__animated{
-    animation-duration: 50s;
-    
+    --animate-duration: 2s;
 }
