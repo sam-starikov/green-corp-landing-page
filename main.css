@@ -290,11 +290,56 @@ button:hover {
 }
 
 .features__rate-box {
-  background-color:  #1D263A;
-box-shadow:0px 6px 0px rgb(29 38 58 / 20%);
+  background-color: #1d263a;
+  box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
 }
-.stars{
-  color:  #ff7039;
+.stars {
+  color: #ff7039;
+}
+
+
+.promo__image {
+
+  background: url(img/promo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  flex-shrink: 0;
+}
+.promo{
+  display: flex;
+justify-content: space-between;
+}
+
+.promo__right{
+  background-color: #dd5f26;
+  padding: 160px 60px 160px 60px;
+  width: 50%;
+}
+
+.card__right{
+  background-color: #fff;
+  padding: 30px 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 25px;
+
+}
+
+.card__right p{
+  opacity: 80%;
+}
+.card__right button{
+  background-color: #107b1c;
+  margin: 20px;
+  font-size: 18px;
+  padding: 15px 30px;
+font-weight: 600;
+}
+.card__right i{
+font-size: 15px;
+margin-left: 5px;
 }
 
 @keyframes rotation {
