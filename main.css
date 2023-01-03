@@ -10,7 +10,7 @@ header {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #213053;
   margin: 0;
 }
@@ -31,7 +31,7 @@ header a {
 }
 
 button {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 15px;
   color: #fff;
   background-color: #23a030;
@@ -54,6 +54,7 @@ button {
 }
 
 .about {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -62,6 +63,12 @@ button {
   background: url(img/back.png) no-repeat;
   background-position: center;
   background-size: cover;
+}
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 .about h1 {
@@ -224,7 +231,6 @@ button:hover {
   padding: 35px, 40px, 25px, 40px;
   border: 1px solid #d9e4e6;
   border-radius: 5px;
-
 }
 
 .card h3 {
@@ -236,7 +242,7 @@ button:hover {
 .card p {
   opacity: 0.8;
   font-size: 16px;
- line-height: 22px;
+  line-height: 22px;
 }
 
 .card__logo {
@@ -269,7 +275,6 @@ button:hover {
   font-size: 18px;
   line-height: 26px;
   opacity: 0.7;
-
 }
 .features__feedback-right {
   display: flex;
@@ -300,37 +305,32 @@ button:hover {
   color: #ff7039;
 }
 
-
 .promo__image {
-
   background: url(img/promo.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   width: 50%;
   flex-shrink: 0;
 }
-.promo{
+.promo {
   display: flex;
-
 }
 
-.promo__right{
+.promo__right {
   background-color: #dd5f26;
   padding: 160px 60px 160px 60px;
-
 }
 
-.card__right{
+.card__right {
   background-color: #fff;
   padding: 30px 40px;
   font-size: 20px;
   line-height: 22px;
   font-weight: 500;
   border-radius: 25px;
-
 }
 
-.card__right p{
+.card__right p {
   opacity: 80%;
 }
 .card__right p::before {
@@ -343,16 +343,16 @@ button:hover {
   margin-right: 10px;
 }
 
-.card__right button{
+.card__right button {
   background-color: #107b1c;
   margin: 20px;
   font-size: 18px;
   padding: 15px 30px;
-font-weight: 600;
+  font-weight: 600;
 }
-.card__right i{
-font-size: 15px;
-margin-left: 5px;
+.card__right i {
+  font-size: 15px;
+  margin-left: 5px;
 }
 .promo__button-wrap {
   display: flex;
@@ -420,10 +420,10 @@ margin-left: 5px;
   .features {
     padding: 50px 10px;
   }
-   .cards {
+  .cards {
     grid-template-columns: auto;
   }
-   .features__feedback {
+  .features__feedback {
     flex-direction: column;
   }
 
@@ -431,7 +431,8 @@ margin-left: 5px;
     margin-right: 0;
   }
 
-  .features__feedback-left h2, .features__box h3 {
+  .features__feedback-left h2,
+  .features__box h3 {
     font-size: 36px;
   }
 
@@ -444,7 +445,7 @@ margin-left: 5px;
     margin-right: 0;
     margin-bottom: 30px;
   }
-   .promo {
+  .promo {
     flex-direction: column-reverse;
   }
 
@@ -456,7 +457,6 @@ margin-left: 5px;
     width: 100%;
     height: 500px;
   }
-
 }
 
 @media (max-width: 1024px) {
