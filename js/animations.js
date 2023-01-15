@@ -16,8 +16,31 @@ function increaseNumberAnimationStep(i, element, endNumber) {
 
 function initIncreaseNumberAnimation() {
   let element = document.querySelector('.features__clients-count')
-  console.log(element)
 
   increaseNumberAnimationStep(0, element, 666)
 }
 initIncreaseNumberAnimation()
+
+document
+  .querySelector('#budget')
+  .addEventListener('change', function handleSelectChange(event) {
+    if (event.target.value === 'other') {
+      let formContainer = document.createElement('div')
+      formContainer.classList.add('form__group')
+      formContainer.classList.add('form__other-input')
+
+      let input = document.createElement('input')
+      input.setAttribute('placeholder', 'Введите ваш вариант')
+      input.setAttribute('type', 'text')
+
+      formContainer.append(input)
+
+      document
+        .querySelector('form')
+        .insertBefore(formContainer, document.querySelector('.form__submit'))
+    }
+    let otherInput = document.querySelector('.form__other-input')
+    if (event.target.value !== 'other' && Boolean(otherInput)) {
+      document.querySelector('form').removeChild(otherInput)
+    }
+  })
