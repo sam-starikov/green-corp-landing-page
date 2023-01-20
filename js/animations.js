@@ -1,4 +1,5 @@
 const INCREASE_NUMBER_ANIMATION_SPEED = 10
+let animationInited = false
 
 function increaseNumberAnimationStep(i, element, endNumber) {
   if (i <= endNumber) {
@@ -19,7 +20,6 @@ function initIncreaseNumberAnimation() {
 
   increaseNumberAnimationStep(0, element, 666)
 }
-initIncreaseNumberAnimation()
 
 document
   .querySelector('#budget')
@@ -44,3 +44,25 @@ document
       document.querySelector('form').removeChild(otherInput)
     }
   })
+
+function updateScroll() {
+  document.querySelector('header').classList.add('header__scrolled')
+
+  if (window.scrollY === 0) {
+    document.querySelector('header').classList.remove('header__scrolled')
+  }
+
+  let windowBottomPosition = window.scrollY + window.innerHeight
+  let countElementPosition = document.querySelector(
+    '.features__clients-count'
+  ).offsetTop
+  console.log(countElementPosition)
+  console.log(windowBottomPosition)
+
+  if (windowBottomPosition >= countElementPosition && !animationInited) {
+    initIncreaseNumberAnimation()
+    animationInited = true
+  }
+}
+
+window.addEventListener('scroll', updateScroll)
