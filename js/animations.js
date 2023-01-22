@@ -81,3 +81,9 @@ function onLinkClick(event) {
 document.querySelectorAll('a[href^="#"]').forEach((el) => {
   addSmoothScroll(el)
 })
+
+addSmoothScroll(document.querySelector('button[href="#features"]'))
+
+let img = document.querySelector('img')
+img.attributes.width = 100
+console.log(img)
