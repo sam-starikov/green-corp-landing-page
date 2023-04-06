@@ -52,8 +52,6 @@ function updateScroll() {
 
    let windowBottomPosition = window.scrollY + window.innerHeight
    let countElementPosition = document.querySelector('.features__clients-count').offsetTop
-   console.log(countElementPosition)
-   console.log(windowBottomPosition)
 
    if (windowBottomPosition >= countElementPosition && !animationInited) {
       initIncreaseNumberAnimation()
@@ -82,4 +80,3 @@ addSmoothScroll(document.querySelector('button[href="#features"]'))
 
 let img = document.querySelector('img')
 img.attributes.width = 100
-console.log(img)
