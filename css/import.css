@@ -1,0 +1,18 @@
+/* SETUP */
+
+@import url(/css/main.css);
+
+/* BLOCKS */
+
+@import url(/css/blocks/about.css);
+@import url(/css/blocks/animation.css);
+@import url(/css/blocks/button.css);
+@import url(/css/blocks/canvas.css);
+@import url(/css/blocks/cards.css);
+@import url(/css/blocks/features.css);
+@import url(/css/blocks/footer.css);
+@import url(/css/blocks/form.css);
+@import url(/css/blocks/header.css);
+@import url(/css/blocks/promo.css);
+@import url(/css/blocks/select.css);
+@import url(/css/blocks/stars.css);
