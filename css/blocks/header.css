@@ -1,16 +1,21 @@
-header {
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0);
+	transition: 0.25s ease;
+}
+
+.header__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
-	position: fixed;
-	left: 0;
-	right: 0;
-	background-color: rgba(255, 255, 255, 0);
-	top: 0;
-	z-index: 1;
-	transition: 0.25s ease;
+	min-height: 80px;
 }
+
+
 
 .header__scrolled {
 	background-color: #fff;
@@ -21,7 +26,7 @@ header {
 	height: 30px;
 }
 
-header a {
+.header a {
 	font-size: 15px;
 	font-weight: 600;
 	margin-right: 25px;
@@ -30,16 +35,12 @@ header a {
 /* MEDIA---------------------------------------------------- */
 
 @media (max-width: 720px) {
-	
-	header {
-		padding: 10px;
-	}
 
 	.header__logo {
 		height: 20px;
 	}
 
-	header a {
+	.header a {
 		margin-right: 10px;
 	}
 }

@@ -1,3 +1,5 @@
+/* COUNTER--------------------------------------------------------------------------------------------- */
+
 const INCREASE_NUMBER_ANIMATION_SPEED = 10
 let animationInited = false
 
@@ -42,6 +44,8 @@ document.querySelector('#budget').addEventListener('change', function handleSele
       document.querySelector('form').removeChild(otherInput)
    }
 })
+
+/* HEADER & COUNTER---------------------------------------------------------------------------------------------------------- */
 
 function updateScroll() {
    document.querySelector('header').classList.add('header__scrolled')

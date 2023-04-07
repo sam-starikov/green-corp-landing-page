@@ -1,11 +1,8 @@
 button {
-	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
 	color: #fff;
 	background-color: #23a030;
-	border: none;
 	border-radius: 15px;
-	cursor: pointer;
 	box-shadow: 0 16px 36px rgba(52, 213, 68, 0.219);
 	padding: 15px;
 }

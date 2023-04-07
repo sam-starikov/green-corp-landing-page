@@ -1,54 +1,65 @@
 .features {
-	background-color: #fff;
-	padding: 115px, 60px;
+	padding: 115px 0;
 }
 
 .features__border {
 	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin: 50px 0;
 	border: 1px solid #e6eaf4;
 }
 
 .features__feedback {
 	display: flex;
+	justify-content: space-between;
+
+}
+
+.features__feedback-left {
+	max-width: 550px;
+	margin-right: 15px;
+}
+
+.features__feedback-left :not(:last-child) {
+	margin-bottom: 15px;
 }
 
 .features__feedback-left h2 {
 	font-size: 48px;
-}
 
-.features__feedback-left {
-	margin-right: 10px;
 }
 
 .features__feedback-left p {
 	font-size: 18px;
-	line-height: 26px;
 	opacity: 0.7;
 }
 
 .features__feedback-right {
 	display: flex;
 	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
 .features__box {
-	padding: 30px 40px 25px 40px;
+	height: 170px;
+	width: 300px;
+	flex: 1 1 100%;
+	padding: 15px;
 	color: #fff;
 	border-radius: 25px;
 }
 
 .features__box h3 {
-	margin-top: 0px;
-	margin-bottom: 20px;
 	font-size: 48px;
 }
 
 .features__savings-box {
 	background-color: #dc5e26;
 	box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
-	margin-right: 30px;
+}
+
+.features__savings-box :not(:last-child) {
+	margin-bottom: 10px;
 }
 
 .features__rate-box {
@@ -56,7 +67,27 @@
 	box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
 }
 
+.features__rate-box>*:not(:last-child) {
+	margin-bottom: 10px;
+}
+
 /* MEDIA------------------------------------------ */
+@media(max-width:1030px) {
+	
+}
+
+@media(max-width:920px) {
+	.features__feedback {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.features__feedback-left {
+		margin-bottom: 35px;
+		margin-right: 0;
+	}
+}
 
 @media (max-width: 720px) {
 
@@ -64,26 +95,8 @@
 		padding: 50px 10px;
 	}
 
-	.features__feedback {
-		flex-direction: column;
-	}
-
-	.features__feedback-left {
-		margin-right: 0;
-	}
-
 	.features__feedback-left h2,
 	.features__box h3 {
 		font-size: 36px;
-	}
-
-	.features__feedback-right {
-		flex-direction: column;
-		align-items: initial;
-	}
-
-	.features__savings-box {
-		margin-right: 0;
-		margin-bottom: 30px;
 	}
 }
