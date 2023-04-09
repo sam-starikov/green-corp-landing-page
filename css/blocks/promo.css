@@ -3,7 +3,7 @@
 }
 
 .promo__image {
-	background: url(/img/promo.jpg) no-repeat;
+	background: url(../../img/promo.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	width: 50%;
