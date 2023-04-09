@@ -7,7 +7,6 @@
 	background: url(/img/back.png) no-repeat;
 	background-position: center;
 	background-size: cover;
-
 }
 
 .about__image {
@@ -23,16 +22,14 @@
 
 .about h1 {
 	font-size: 70px;
-	
 }
 
 .about p {
 	font-size: 18px;
-	
 	opacity: 0.8;
 }
 
-.about button {
+.about__button {
 	font-size: 18px;
 	border-radius: 20px;
 	padding: 20px 25px;
@@ -52,7 +49,6 @@
 
 	.about h1 {
 		font-size: 36px;
-	
 	}
 
 	.about__image {
@@ -69,7 +65,6 @@
 
 	.about {
 		flex-direction: column-reverse;
-
 	}
 
 	.about__image {
