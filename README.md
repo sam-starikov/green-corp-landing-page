@@ -1,4 +1,4 @@
-Landing Page - **Солнечные батареи GreenCorp**
+Landing Page- https://sam-starikov.github.io/green-corp-landing-page/ - **Солнечные батареи GreenCorp**
 
 **Stack:**
 
